@@ -2,8 +2,7 @@ name: SMA Crossover Checker
 
 on:
   schedule:
-    # Run at 12 PM Eastern Time (which is 4 PM UTC during Daylight Saving Time and 5 PM UTC otherwise)
-    - cron: '0 16 * * *'
+    - cron: '30 13-21 * * 1-5'
   workflow_dispatch:
     inputs:
       sendTestEmail:
