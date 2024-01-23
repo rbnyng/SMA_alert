@@ -3,6 +3,7 @@ import pandas as pd
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+import os
 
 # Check for test email environment variable
 if os.environ.get('SEND_TEST_EMAIL') == 'true':
