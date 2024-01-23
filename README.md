@@ -27,11 +27,13 @@ Set up the following secrets in your GitHub repository for the email functionali
 
 ### Usage
 
-The script is primarily designed for automatic execution through GitHub Actions. It can be manually run for testing: python alert.py
-
+The script is primarily designed for automatic execution through GitHub Actions. It can be manually run for testing: 
+```
+python alert.py
+```
 ### GitHub Actions Workflow
 
-The `.github/workflows/main.yml` file schedules the workflow to run daily at 12 PM Eastern Time and allows manual triggering for sending a test email or checking the SMA crossover.
+The `.github/workflows/main.yml` file schedules the workflow to run hourly between market open and close in Eastern Time and allows manual triggering for sending a test email or checking the SMA crossover.
 
 ### State Tracking
 
