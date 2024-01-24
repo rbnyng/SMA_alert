@@ -58,9 +58,6 @@ latest_data = data.tail(1)
 sma_15 = latest_data['SMA_15'].item()
 sma_190 = latest_data['SMA_190'].item()
 
-crossed_above = sma_15 > sma_190
-crossed_below = sma_15 < sma_190
-
 current_state = 'above' if sma_15 > sma_190 else 'below'
 
 if current_state != last_state:
